@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> register page </title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-image: url(11.jpg); opacity: 85%;background-size: cover;">
+    <!-- <p id="p1">javascript</p>
+    <script>
+        document.getElementById("p1").innerHTML = "今天学JAVASCRIPT";
+    </script>
+    <div style="padding: 15px; width: 250px; height: 250px;background-color:
+            antiquewhite; border-radius: 10px;">
+        <form>
+            <h1 style="text-align: center ;">Login</h1>
+            <label>UserName:</label>
+            <input placeholder="enter UserName" type="text" style="width:
+                    96%"><br>
+            <label>Password:</label>
+            <input placeholder="enter Password" type="password" style="width: 96%"><br><br>
+            <input type="submit" value="Login" style="border: 0ch;
+                    border-radius: 5px; background-color: blue; color:
+                    aliceblue; width: 100%">
+        </form>
+    </div><br> -->
+
+
+    <h3 style="color:white">Please fill in this form to create an account</h3>
+
+    <div style="border: 5px solid rgb(195, 199, 203); width: 400px; padding: 15px;
+            border-radius: 10px; background-color:aliceblue; ">
+        <div style="border-bottom: 2px solid black;">
+            <h1 style="text-align: center ;"> Register</h1>
+
+        </div>
+        <form>
+            <input type="text" placeholder="first name" style="width:42%; margin: 10px;">
+            <input type="text" placeholder="last name" style="width:41%;">
+            <input id="email" type="email" placeholder="email adress" type="email" style="margin:
+                    10px; width:89%;">
+
+            <script>
+                var pattern = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
+                document.getElementById("email").addEventListener("input", (e) => {
+                    if (pattern.test(document.getElementById("email").value)) {
+                        document.getElementById("result").textContent = "ready to register";
+                    } else {
+                        document.getElementById("result").textContent = "email address is not verified";
+                    }
+                });
+            </script>
+            <input type="password" placeholder="password" style="width: 89%; margin: 10px; "><br>
+
+            <p id="result" style="text-align: center;"></p>
+            <input type="checkbox">
+            <label>I accept the Tems&Privacy.</label><br>
+
+            <input id="register" type="button" value="Register" style=" width: 350px; background-color:
+                    blue; width: 100px; border-radius: 5px; height: 30px;
+                    color:aliceblue">
+            <script>
+                document.getElementById("register").onclick= function () {
+                    window.alert("You have registered successfully");}
+            </script>
+            <p>Already have an account?<span style="color:green;">Sign in</span>.</p>
+        </form>
+    </div>
+</body>
+
+</html>
